@@ -1,0 +1,152 @@
+/* TIPOGRAFIAS */
+
+/*RECOLETA*/
+
+@font-face {
+  font-family: 'LttRecoleta';
+  src: url('fonts/LttRecoleta/LttRecoleta-Thin.otf') format('opentype');
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: 'LttRecoleta';
+  src: url('fonts/LttRecoleta/LttRecoleta-ExtraLight.otf') format('opentype');
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: 'LttRecoleta';
+  src: url('fonts/LttRecoleta/LttRecoleta-Light.otf') format('opentype');
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'LttRecoleta';
+  src: url('fonts/LttRecoleta/LttRecoleta-Regular.otf') format('opentype');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'LttRecoleta';
+  src: url('fonts/LttRecoleta/LttRecoleta-Medium.otf') format('opentype');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'LttRecoleta';
+  src: url('fonts/LttRecoleta/LttRecoleta-SemiBold.otf') format('opentype');
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'LttRecoleta';
+  src: url('fonts/LttRecoleta/LttRecoleta-Bold.otf') format('opentype');
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'LttRecoleta';
+  src: url('fonts/LttRecoleta/LttRecoleta-Black.otf') format('opentype');
+  font-weight: 900;
+}
+
+/*BAMBINO*/
+
+@font-face {
+  font-family: 'BambinoNew';
+  src: url('fonts/Bambino/BambinoNew-Thin.otf') format('opentype');
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'BambinoNew';
+  src: url('fonts/Bambino/BambinoNew-ThinItalic.otf') format('opentype');
+  font-weight: 100;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'BambinoNew';
+  src: url('fonts/Bambino/BambinoNew-Light.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'BambinoNew';
+  src: url('fonts/Bambino/BambinoNew-LightItalic.otf') format('opentype');
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'BambinoNew';
+  src: url('fonts/Bambino/BambinoNew-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'BambinoNew';
+  src: url('fonts/Bambino/BambinoNew-RegularItalic.otf') format('opentype');
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'BambinoNew';
+  src: url('fonts/Bambino/BambinoNew-SemiBold.otf') format('opentype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'BambinoNew';
+  src: url('fonts/Bambino/BambinoNew-SemiBoldItalic.otf') format('opentype');
+  font-weight: 600;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'BambinoNew';
+  src: url('fonts/Bambino/BambinoNew-Bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'BambinoNew';
+  src: url('fonts/Bambino/BambinoNew-BoldItalic.otf') format('opentype');
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'BambinoNew';
+  src: url('fonts/Bambino/BambinoNew-Heavy.otf') format('opentype');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'BambinoNew';
+  src: url('fonts/Bambino/BambinoNew-HeavyItalic.otf') format('opentype');
+  font-weight: 800;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'BambinoNew';
+  src: url('fonts/Bambino/BambinoNew-Black.otf') format('opentype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'BambinoNew';
+  src: url('fonts/Bambino/BambinoNew-BlackItalic.otf') format('opentype');
+  font-weight: 900;
+  font-style: italic;
+}
+
