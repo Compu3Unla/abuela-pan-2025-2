@@ -370,3 +370,72 @@ body {
   flex-shrink: 0;
   object-fit: cover;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* === HISTORIA === */
+
+.historia-contenido {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  margin: 0 auto;
+  padding: 40px 16px;
+}
+
+.historia-contenido h1 {
+color: var(--verdeAP);
+text-align: center;
+font-family: "Ltt Recoleta";
+font-size: 69px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}
+
+.historia-contenido h2 {
+color: var(--verdeoscuroAP);
+text-align: center;
+font-family: "Ltt Recoleta";
+font-size: 40px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+
+.historia-texto {
+color: var(--verdeoscuroAP);
+font-family: "Bambino New";
+width: 541px;
+font-size: 20px;
+font-style: normal;
+text-align: center;
+font-weight: 400;
+line-height: 36px;
+}
