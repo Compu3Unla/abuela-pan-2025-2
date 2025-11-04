@@ -2,36 +2,63 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Abuela Pan</title>
-    <link rel="icon" href="img/favicon.svg" type="image/svg+ml">
-    <link rel="stylesheet" href="estilos.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Abuela Pan</title>
+  <link rel="icon" href="img/favicon.svg" type="image/svg+ml">
+  <link rel="stylesheet" href="estilos.css">
 </head>
 
 <body>
 
 
 <header class="headerAP">
-  <img src="img/home/header-background.svg" alt="Franja color verde" class="franja-header">
-
-  <div class="contenido-header">
-    <nav class="nav-header">
-      <a href="#" class="nav-boton">Nosotros</a>
-      <a href="#" class="nav-boton">Menú</a>
-    </nav>
+  <nav class="nav-header">
+    <a href="#" class="nav-boton">Nosotros</a>
 
     <a href="#" class="boton-home">
-      <img src="img/home/logohome.svg" alt="Logo de abuela pan" class="logo-header">
+      <img src="img/home/logohome.svg" alt="Logo de Abuela Pan" class="logo-header">
     </a>
-  </div>
+
+    <a href="../abuela-pan-2025-2/contacto.html" class="nav-boton">Contacto</a>
+  </nav>
 </header>
 
 
-<footer class="footerAP">
-  <img src="img/home/footer/footer-background.svg" alt="Franja color verde" class="franja-footer">
+<section class="sliderAP">
+  <div class="slider-imgs">
+    <img src="img/home/plato01.jpg" alt="Plato 1">
+    <img src="img/home/plato02.jpg" alt="Plato 2">
+    <img src="img/home/plato03.jpg" alt="Plato 3">
+  </div>
+</section>
 
-  <div class="footer-content">
+
+<!--SCRIPT PARA EL SLIDER-->
+<script>
+  const track = document.querySelector('.slider-imgs');
+  const slides = document.querySelectorAll('.slider-imgs img');
+  let index = 0;
+
+  track.style.width = `${slides.length * 100}vw`;
+
+  function updateSlide(transition = true) {
+    track.style.transition = transition ? 'transform 0.5s ease' : 'none';
+    track.style.transform = `translateX(-${index * 100}vw)`;
+  }
+
+  function nextSlide() {
+    index = (index + 1) % slides.length;
+    updateSlide();
+  }
+
+  setInterval(nextSlide, 2000);
+  updateSlide();
+</script>
+<!----------------------->
+
+<footer class="footerAP">
+  <div class="footer-contenido">
     <div class="footer-info">
       <img src="img/home/footer/logo-footer.svg" alt="Logo Abuela Pan" class="footer-logo">
       <div class="footer-texto">
