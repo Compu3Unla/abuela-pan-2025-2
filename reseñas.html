@@ -24,69 +24,128 @@
         </nav>
     </header>
 
+    <!--MOBILE-->
+    <header class="header-mobile">
+        <div class="header-mobile-contenido">
+            <img src="img/mobile/retrato-header.svg" alt="Retrato Abuela Pan" class="logo-mobile">
+            </a>
+            <h1 class="titulo-mobile">Abuela Pan</h1>
+            <button class="menu-hamburguesa" aria-label="Abrir menú">
+                <img src="img/mobile/hamburguesa.svg" alt="Menú">
+            </button>
+        </div>
+        <nav class="menu-mobile" id="menuMobile">
+            <ul>
+                <li><a href="historia.html">Nosotros</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!--SCRIPT PARA EL MENU MOBILE-->
+    <script>
+        const botonMenu = document.querySelector('.menu-hamburguesa');
+        const menu = document.getElementById('menuMobile');
+
+        botonMenu.addEventListener('click', () => {
+            menu.classList.toggle('activo');
+        });
+    </script>
+    <!----------------------->
+
     <section class="formulario-AP">
         <img src="img/reseñas/retrato-reseñas.svg" alt="Ilustración de María Rosa Pan con un pulgar arriba">
         <div class="formulario-texto">
-          <h2>¿Te gustó la comida?</h2>
-          <h3>¡Esperamos tus comentarios!</h3>
+            <h2>¿Te gustó la comida?</h2>
+            <h3>¡Esperamos tus comentarios!</h3>
         </div>
 
         <div class="datos-formulario">
-          <form id="formulario-completar">
-            <label for="nombre">Nombre y apellido</label>
-            <input type="text" id="nombre" name="nombre">
+            <form id="formulario-completar">
+                <label for="nombre">Nombre y apellido</label>
+                <input type="text" id="nombre" name="nombre">
 
-            <label for="email">Mi plato fue</label>
-            <input type="text" id="email" name="email">
+                <label for="email">Mi plato fue</label>
+                <input type="text" id="email" name="email">
 
-            <label for="mensaje">Comentario</label>
-            <textarea id="mensaje" name="mensaje" rows="5"></textarea>
+                <label for="mensaje">Comentario</label>
+                <textarea id="mensaje" name="mensaje" rows="5"></textarea>
 
-            <button type="submit" id="boton-enviar">Enviar comentario</button>
-          </form>
+                <button type="submit" id="boton-enviar">Enviar comentario</button>
+            </form>
         </div>
     </section>
-  </main>
+    </main>
 
-  <script>
-    const boton = document.getElementById('boton-enviar');
-    const formulario = document.getElementById('formulario-completar');
+    <script>
+        const boton = document.getElementById('boton-enviar');
+        const formulario = document.getElementById('formulario-completar');
 
-    formulario.addEventListener('submit', function (e) {
-      e.preventDefault();
-      boton.textContent = '¡Enviado!';
-      boton.classList.add('enviado');
-      boton.disabled = true;
-      setTimeout(() => {
-        boton.textContent = 'Enviar otro mensaje';
-        boton.classList.remove('enviado');
-        boton.disabled = false;
-      }, 2000);
-    });
-  </script>
+        formulario.addEventListener('submit', function (e) {
+            e.preventDefault();
+            boton.textContent = '¡Enviado!';
+            boton.classList.add('enviado');
+            boton.disabled = true;
+            setTimeout(() => {
+                boton.textContent = 'Enviar otro mensaje';
+                boton.classList.remove('enviado');
+                boton.disabled = false;
+            }, 2000);
+        });
+    </script>
 
-        <footer class="footerAP">
-            <div class="footer-contenido">
-                <div class="footer-info">
-                    <img src="img/home/footer/logo-footer.svg" alt="Logo Abuela Pan" class="footer-logo">
-                    <div class="footer-texto">
-                        <p>Chile 518 - San Telmo / Buenos Aires / Argentina</p>
-                        <p>Delivery sin cargo: 4361-4936 / 4300-1519</p>
-                    </div>
-                </div>
-                <div class="footer-redes">
-                    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" aria-label="WhatsApp">
-                        <img src="img/home/footer/social-wpp.svg" alt="WhatsApp" class="iconos-redes">
-                    </a>
-                    <a href="https://instagram.com/abuelapanresto" target="_blank" aria-label="Instagram">
-                        <img src="img/home/footer/social-ig.svg" alt="Instagram" class="iconos-redes">
-                    </a>
-                    <a href="https://www.facebook.com/Abuelapanrestovegui" target="_blank" aria-label="Facebook">
-                        <img src="img/home/footer/social-fb.svg" alt="Facebook" class="iconos-redes">
-                    </a>
+    <footer class="footerAP">
+        <div class="footer-contenido">
+            <div class="footer-info">
+                <img src="img/home/footer/logo-footer.svg" alt="Logo Abuela Pan" class="footer-logo">
+                <div class="footer-texto">
+                    <p>Chile 518 - San Telmo / Buenos Aires / Argentina</p>
+                    <p>Delivery sin cargo: 4361-4936 / 4300-1519</p>
                 </div>
             </div>
-        </footer>
+            <div class="footer-redes">
+                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" aria-label="WhatsApp">
+                    <img src="img/home/footer/social-wpp.svg" alt="WhatsApp" class="iconos-redes">
+                </a>
+                <a href="https://instagram.com/abuelapanresto" target="_blank" aria-label="Instagram">
+                    <img src="img/home/footer/social-ig.svg" alt="Instagram" class="iconos-redes">
+                </a>
+                <a href="https://www.facebook.com/Abuelapanrestovegui" target="_blank" aria-label="Facebook">
+                    <img src="img/home/footer/social-fb.svg" alt="Facebook" class="iconos-redes">
+                </a>
+            </div>
+        </div>
+    </footer>
+
+
+    <!--MOBILE-->
+    <footer class="footer-mobile">
+        <div class="footer-mobile-contenido">
+
+            <img src="img/mobile/retrato.svg" alt="Retrato de Abuela Pan" class="footer-mobile-logo">
+            <h1 class="footer-mobile-titulo">Abuela Pan</h1>
+
+            <section class="footer-mobile-contacto">
+                <h2>Contacto</h2>
+                <p>4362-4936 / 4300-1519</p>
+                <p>ap@abuelapan.com</p>
+                <p>Chile 518 / Buenos Aires, Argentina</p>
+            </section>
+
+            <nav class="footer-mobile-redes" aria-label="Redes sociales">
+                <a href="https://instagram.com/abuelapanresto" target="_blank" aria-label="Instagram">
+                    <img src="img/mobile/ig.svg" alt="Instagram">
+                </a>
+                <a href="https://facebook.com/Abuelapanrestovegui" target="_blank" aria-label="Facebook">
+                    <img src="img/mobile/facebook.svg" alt="Facebook">
+                </a>
+                <a href="https://wa.me/5491133624936" target="_blank" aria-label="WhatsApp">
+                    <img src="img/mobile/wpp.svg" alt="WhatsApp">
+                </a>
+            </nav>
+
+        </div>
+    </footer>
+    <!----------------------->
 
 
 </body>

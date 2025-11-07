@@ -22,6 +22,33 @@
   </nav>
 </header>
 
+<!--MOBILE-->
+<header class="header-mobile">
+  <div class="header-mobile-contenido">
+    <img src="img/mobile/retrato-header.svg" alt="Retrato Abuela Pan" class="logo-mobile">
+    <h1 class="titulo-mobile">Abuela Pan</h1>
+    <button class="menu-hamburguesa" aria-label="Abrir menú">
+      <img src="img/mobile/hamburguesa.svg" alt="Menú">
+    </button>
+  </div>
+  <nav class="menu-mobile" id="menuMobile">
+  <ul>
+    <li><a href="historia.html">Nosotros</a></li>
+    <li><a href="contacto.html">Contacto</a></li>
+  </ul>
+</nav>
+</header>
+<!--SCRIPT PARA EL MENU MOBILE-->
+<script>
+  const botonMenu = document.querySelector('.menu-hamburguesa');
+  const menu = document.getElementById('menuMobile');
+
+  botonMenu.addEventListener('click', () => {
+    menu.classList.toggle('activo');
+  });
+</script>
+<!----------------------->
+
 
 
     <main id="contacto">
@@ -73,6 +100,38 @@
     </div>
   </div>
 </footer>
+
+   <!--MOBILE-->
+    <footer class="footer-mobile">
+        <div class="footer-mobile-contenido">
+
+            <img src="img/mobile/retrato.svg" alt="Retrato de Abuela Pan" class="footer-mobile-logo">
+            <h1 class="footer-mobile-titulo">Abuela Pan</h1>
+
+            <section class="footer-mobile-contacto">
+                <h2>Contacto</h2>
+                <p>4362-4936 / 4300-1519</p>
+                <p>ap@abuelapan.com</p>
+                <p>Chile 518 / Buenos Aires, Argentina</p>
+            </section>
+
+            <nav class="footer-mobile-redes" aria-label="Redes sociales">
+                <a href="https://instagram.com/abuelapanresto" target="_blank" aria-label="Instagram">
+                    <img src="img/mobile/ig.svg" alt="Instagram">
+                </a>
+                <a href="https://facebook.com/Abuelapanrestovegui" target="_blank" aria-label="Facebook">
+                    <img src="img/mobile/facebook.svg" alt="Facebook">
+                </a>
+                <a href="https://wa.me/5491133624936" target="_blank" aria-label="WhatsApp">
+                    <img src="img/mobile/wpp.svg" alt="WhatsApp">
+                </a>
+            </nav>
+
+        </div>
+    </footer>
+    <!----------------------->
+
+
 
 </body>
 
