@@ -26,18 +26,48 @@
         </nav>
     </header>
 
+    <!--MOBILE-->
+    <header class="header-mobile">
+        <div class="header-mobile-contenido">
+            <img src="img/mobile/retrato-header.svg" alt="Retrato Abuela Pan" class="logo-mobile">
+            <h1 class="titulo-mobile">Abuela Pan</h1>
+            <button class="menu-hamburguesa" aria-label="Abrir menú">
+                <img src="img/mobile/hamburguesa.svg" alt="Menú">
+            </button>
+        </div>
+        <nav class="menu-mobile" id="menuMobile">
+            <ul>
+                <li><a href="historia.html">Nosotros</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!--SCRIPT PARA EL MENU MOBILE-->
+    <script>
+        const botonMenu = document.querySelector('.menu-hamburguesa');
+        const menu = document.getElementById('menuMobile');
+
+        botonMenu.addEventListener('click', () => {
+            menu.classList.toggle('activo');
+        });
+    </script>
+    <!----------------------->
+
 
     <section class="historia-contenido">
         <img src="img/historia/retrato-historia.svg" alt="Ilustración de María Rosa Pan">
         <div class="historia-texto">
             <h1>María Rosa Pan</h1>
             <h2>Raíces e Historia</h2>
-            <p><strong>María Rosa Pan</strong> nació en <strong>Buenos Aires</strong> en <strong>1924</strong>, en una familia de inmigrantes italianos. Desde niña mostró
+            <p><strong>María Rosa Pan</strong> nació en <strong>Buenos Aires</strong> en <strong>1924</strong>, en una
+                familia de inmigrantes italianos. Desde niña mostró
                 amor por la cocina, aprendiendo a amasar pan con su madre y convirtiendo su casa en un punto de reunión
                 familiar donde reinaban los aromas y sabores caseros. Trabajó en una panadería de barrio y desarrolló un
                 estilo propio basado en la cocina hogareña y saludable, usando ingredientes naturales cuando aún no eran
-                comunes. Casada y madre de tres hijos, transmitió su pasión a sus nietos, entre ellos <strong>Daniel Suárez</strong>,
-                quien años después abrió en <strong>San Telmo</strong> el restaurante <strong>Abuela Pan</strong> en su honor para así, seguir su legado
+                comunes. Casada y madre de tres hijos, transmitió su pasión a sus nietos, entre ellos <strong>Daniel
+                    Suárez</strong>,
+                quien años después abrió en <strong>San Telmo</strong> el restaurante <strong>Abuela Pan</strong> en su
+                honor para así, seguir su legado
                 de sabor hogareño.</p>
         </div>
     </section>
@@ -111,6 +141,36 @@ https://player.vimeo.com/api/player.js
             </div>
         </div>
     </footer>
+
+    <!--MOBILE-->
+    <footer class="footer-mobile">
+        <div class="footer-mobile-contenido">
+
+            <img src="img/mobile/retrato.svg" alt="Retrato de Abuela Pan" class="footer-mobile-logo">
+            <h1 class="footer-mobile-titulo">Abuela Pan</h1>
+
+            <section class="footer-mobile-contacto">
+                <h2>Contacto</h2>
+                <p>4362-4936 / 4300-1519</p>
+                <p>ap@abuelapan.com</p>
+                <p>Chile 518 / Buenos Aires, Argentina</p>
+            </section>
+
+            <nav class="footer-mobile-redes" aria-label="Redes sociales">
+                <a href="https://instagram.com/abuelapanresto" target="_blank" aria-label="Instagram">
+                    <img src="img/mobile/ig.svg" alt="Instagram">
+                </a>
+                <a href="https://facebook.com/Abuelapanrestovegui" target="_blank" aria-label="Facebook">
+                    <img src="img/mobile/facebook.svg" alt="Facebook">
+                </a>
+                <a href="https://wa.me/5491133624936" target="_blank" aria-label="WhatsApp">
+                    <img src="img/mobile/wpp.svg" alt="WhatsApp">
+                </a>
+            </nav>
+
+        </div>
+    </footer>
+    <!----------------------->
 
     <!----js gallery----->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>

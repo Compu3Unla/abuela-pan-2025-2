@@ -800,6 +800,8 @@ body {
   border-radius: 20px;
 }
 
+/* ======================================================== */
+
 /* ===Galeria Historia === */
 
 .historia-galeria {
@@ -818,3 +820,250 @@ body {
 .historia-galeria a img {
   border-radius: 30px;
 }
+
+/* ======================================================== */
+
+/* ===Footer Mobile=== */
+.footer-mobile {
+  display: none;
+  background-color: var(--verdeAP);
+  padding: 32px;
+  text-align: center;
+  font-family: 'lttrecoleta', serif;
+}
+
+.footer-mobile h2 {
+  color: var(--cremaAP);
+}
+
+.footer-mobile p {
+  color: var(--cremaAP);
+}
+
+.footer-mobile h1 {
+  color: var(--cremaAP);
+}
+
+.footer-mobile-logo {
+  margin-bottom: 9px;
+}
+
+.footer-mobile-contacto p {
+  margin: 4px 0;
+  font-size: 14px;
+}
+
+.footer-mobile-redes {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 50px;
+}
+
+.footer-mobile-redes img {
+  width: 28px;
+  height: 28px;
+}
+
+.footer-mobile-contacto {
+  margin-top: 50px;
+  line-height: 30px;
+}
+
+
+/* ===Header Mobile=== */
+.header-mobile {
+  display: none;
+  background-color: var(--verdeAP);
+  padding: 12px 16px;
+}
+
+.header-mobile-contenido {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo-mobile {
+  height: 40px;
+}
+
+.titulo-mobile {
+  font-family: 'lttrecoleta', serif;
+  font-size: 20px;
+  margin-left: 12px;
+  flex-grow: 1;
+  color: var(--cremaAP);
+}
+
+.menu-hamburguesa {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.menu-hamburguesa img {
+  width: 30px;
+  height: auto;
+  background-color: transparent;
+}
+
+.menu-mobile {
+  display: none;
+  flex-direction: column;
+  background-color: var(--verdeAP);
+  padding: 16px;
+  font-family: 'bambinonew', serif;
+}
+.menu-mobile a {
+color: var(--cremaAP); 
+  text-decoration: none;
+  font-family: 'lttrecoleta', serif;
+  font-size: 18px;
+  }
+
+
+.menu-mobile ul {
+  list-style: none;
+  line-height: 2;
+  }
+
+.menu-mobile.activo {
+  display: flex;
+  align-items: flex-end;
+}
+
+
+/* === arroba midia :P === */
+@media (max-width: 500px) {
+  /* HEADER / NAV */
+  .headerAP {
+    padding: 10px 12px;
+  }
+  .nav-header {
+    gap: 8px;
+    max-width: none;
+    padding: 0 6px;
+  }
+  .logo-header {
+    height: 40px;
+  }
+
+  /* SLIDER: altura controlada para mobile */
+  .slider-imgs img {
+    width: 100vw;
+    height: 220px;
+    object-fit: cover;
+  }
+  .sliderAP,
+  .slider-imgs {
+    overflow: hidden;
+  }
+
+  /* ICONOS (Platos / Recetas / Reseñas) */
+.platos-recetas-reseñasAP {
+  display: column;
+  justify-content: center;
+  gap: 20px;       
+  flex-wrap: nowrap; 
+  align-items: center;
+}
+
+.icono-static { z-index: 1; display: block; }
+.icono-hover {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  opacity: 0;
+}
+
+.iconos-hover:hover .icono-hover { opacity: 1; }
+.iconos-hover:hover .icono-static { opacity: 0; }
+
+.iconos-hover p {
+  font-size: 16px;  
+  margin-top: 4px;
+}
+
+  /* RECETAS: fuerza ancho completo y previews apilados */
+  .recetasAP {
+    width: 100%;
+    padding: 12px;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+  .preview-receta {
+    width: 100%;
+    display: block;
+    padding: 12px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+  }
+  .preview-receta img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  .preview-receta h3 {
+    font-size: 18px;
+    margin: 10px 0 6px;
+  }
+  .preview-receta p {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+
+  .boton-recetaAP {
+    display: inline-block;
+    padding: 10px 14px;
+    font-size: 14px;
+    border-radius: 10px;
+  }
+
+  /* VIDEO: contenedor responsivo */
+  .video-container {
+    max-width: 100%;
+    padding-bottom: 56.25%;
+  }
+  .videoAP {
+    padding: 16px 12px;
+  }
+
+  /* FOOTER */
+  .footer-contenido {
+    flex-direction: column;
+    gap: 12px;
+    padding: 16px;
+    align-items: center;
+    text-align: center;
+  }
+  .footer-texto p {
+    font-size: 13px;
+  }
+
+  /* Ajustes tipográficos generales */
+  body {
+    font-size: 16px;
+  }
+
+
+  /* esto es para que no se vean si no estan en mobile*/
+  .footer-mobile {
+    display: block;
+  }
+
+  .footerAP {
+    display: none;
+  }
+
+  .header-mobile {
+    display: block;
+  }
+
+  .headerAP {
+    display: none;
+  }
+} 
