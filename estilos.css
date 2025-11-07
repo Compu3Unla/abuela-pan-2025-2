@@ -536,3 +536,83 @@ body {
   font-weight: 400;
   line-height: 36px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ===Menu - lista de platos === */
+.menu-lista {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+  margin: 0 auto;
+  padding: 40px 16px;
+}
+
+.menu-lista h1 {
+color: var(--verdeAP);
+text-align: center;
+font-family: "Ltt Recoleta";
+font-size: 64px;
+font-style: normal;
+font-weight: 900;
+line-height: normal;
+}
