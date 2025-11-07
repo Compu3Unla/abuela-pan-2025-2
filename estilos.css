@@ -185,19 +185,14 @@ body {
 .headerAP {
   background-color: var(--verdeAP);
   padding: 16px 32px;
-  position: relative;
 }
 
-
+/* NAV con 3 elementos distribuidos con flex */
 .nav-header {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   gap: 40px;
-  width: 100%;
-  max-width: 1600px;
-  margin: 0 auto;
-  position: relative;
 }
 
 /* Botones */
@@ -226,6 +221,7 @@ body {
 .logo-header {
   height: 64px;
 }
+
 
 /* === FOOTER === */
 .footerAP {
