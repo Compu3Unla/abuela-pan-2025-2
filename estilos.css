@@ -170,8 +170,9 @@ body {
 }
 
 .homeAP {
-  overflow-x: hidden; /*esto lo puse acá para que no afecte al slide, sino genera scroll horizontal*/
-} 
+  overflow-x: hidden;
+  /*esto lo puse acá para que no afecte al slide, sino genera scroll horizontal*/
+}
 
 :root {
   --verdeAP: #097d4c;
@@ -481,9 +482,12 @@ body {
   font-weight: 600;
   font-size: 20px;
   text-decoration: none;
-  color: var(--cremaAP); /* texto crema sobre fondo verde */
-  background-color: var(--verdeAP); /* fondo verde */
-  border: 2px solid var(--verdeAP); /* borde verde ? */
+  color: var(--cremaAP);
+  /* texto crema sobre fondo verde */
+  background-color: var(--verdeAP);
+  /* fondo verde */
+  border: 2px solid var(--verdeAP);
+  /* borde verde ? */
   padding: 8px 16px;
   border-radius: 30px;
   transition: all 0.2s ease-in-out;
@@ -492,9 +496,12 @@ body {
 }
 
 .boton-recetaAP:hover {
-  background-color: var(--cremaAP); /* fondo crema */
-  color: var(--verdeAP); /* texto verde */
-  border: 2px solid var(--verdeAP); /* borde verde */
+  background-color: var(--cremaAP);
+  /* fondo crema */
+  color: var(--verdeAP);
+  /* texto verde */
+  border: 2px solid var(--verdeAP);
+  /* borde verde */
 }
 
 
@@ -602,6 +609,10 @@ body {
 
 
 
+
+
+
+
 /* ===Menu - lista de platos === */
 .menu-lista {
   display: flex;
@@ -613,11 +624,84 @@ body {
 }
 
 .menu-lista h1 {
-color: var(--verdeAP);
-text-align: center;
-font-family: "Ltt Recoleta";
-font-size: 64px;
-font-style: normal;
-font-weight: 900;
-line-height: normal;
+  color: var(--verdeAP);
+  text-align: center;
+  font-family: "Ltt Recoleta";
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+}
+
+.menu-lista img {
+  border-radius: 30px;
+}
+
+.platos-columnas {
+  display: grid;
+  height: 1664px;
+  row-gap: 27px;
+  column-gap: 20px;
+  align-self: stretch;
+  grid-template-rows: repeat(6, minmax(0, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.plato {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 16px;
+  padding: 24px;
+  border-radius: 30px;
+  background: var(--plato-bg, transparent);
+  border: var(--plato-border, none);
+  color: var(--plato-text, inherit);
+}
+
+.plato .plato-descripcion {
+  display: flex;
+  width: 295px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 22px;
+}
+
+.plato h3 {
+  font-family: "Ltt Recoleta";
+  font-size: 32px;
+  font-weight: 600;
+  line-height: normal;
+  color: inherit;
+}
+
+.plato p {
+  color: inherit;
+  font-family: "BambinoNew";
+  font-size: 12px;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.plato h4 {
+  color: inherit;
+  font-family: "Ltt Recoleta";
+  font-size: 22px;
+  font-weight: 900;
+  line-height: normal;
+}
+
+
+.plato--01 {
+  --plato-bg: var(--Verde-AP, #097D4C);
+  --plato-text: var(--Beige-AP, #F1EAD0);
+  --plato-border: none;
+  border-radius: 30px;
+}
+
+.plato--02 {
+  --plato-bg: var(--Beige-AP, #F1EAD0);
+  --plato-text: var(--verdeAP, #097D4C);
+  --plato-border: 3px solid var(--Verde-AP, #097D4C);
+  border-radius: 20px;
 }
