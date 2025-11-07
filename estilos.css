@@ -630,7 +630,7 @@ body {
   align-items: center;
   justify-content: center;
   padding: 48px 24px;
-  font-family: "Helvetica Neue", sans-serif;
+  font-family: "LTTrecoleta";
 }
 
 .formulario-AP img {
@@ -644,9 +644,9 @@ body {
 }
 
 .formulario-texto h2 {
-  font-size: 28px;
+  font-size: 32px;
   margin-bottom: 10px;
-  color: var(--verdeoscuroAP);
+  color: var(--verdeAP);
 }
 
 .formulario-texto h3 {
@@ -695,6 +695,7 @@ body {
   border-radius: 10px;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  font-family: "LTTrecoleta";
 }
 
 #boton-enviar:hover {
