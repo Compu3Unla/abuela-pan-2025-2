@@ -155,9 +155,11 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  overflow-x: hidden;
 }
 
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   min-height: 100vh;
@@ -167,6 +169,9 @@ body {
   background-color: var(--cremaAP);
 }
 
+.homeAP {
+  overflow-x: hidden; /*esto lo puse acá para que no afecte al slide, sino genera scroll horizontal*/
+} 
 
 :root {
   --verdeAP: #097d4c;
@@ -419,10 +424,12 @@ body {
 
 .iconos-hover:hover .icono-hover {
   opacity: 1;
+  cursor: pointer;
 }
 
 .iconos-hover:hover .icono-static {
   opacity: 0;
+  cursor: pointer;
 }
 
 .iconos-hover p {
@@ -442,9 +449,6 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 1325px;
-  margin: 0 auto;
-  padding: 40px;
 }
 
 .preview-receta {
@@ -453,12 +457,11 @@ body {
   padding: 24px;
   border-radius: 30px;
   margin: 0 0 30px;
-  width: 100%;           
-  box-sizing: border-box;
+  width: 65%;
 }
 
 .preview-receta img {
-  width: auto;
+  width: 100%;
   height: auto;
   border-radius: 30px;
 }
