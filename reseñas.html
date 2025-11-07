@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abuela Pan | Reseñas</title>
+    <link rel="icon" href="img/favicon.svg" type="image/svg+ml">
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+
+
+    <header class="headerAP">
+        <nav class="nav-header">
+            <a href="historia.html" class="nav-boton">Nosotros</a>
+
+            <a href="index.html" class="boton-home">
+                <img src="img/home/logohome.svg" alt="Logo de Abuela Pan" class="logo-header">
+            </a>
+
+            <a href="contacto.html" class="nav-boton">Contacto</a>
+        </nav>
+    </header>
+
+    <section class="formulario-AP">
+        <img src="img/reseñas/retrato-reseñas.svg" alt="Ilustración de María Rosa Pan con un pulgar arriba">
+        <div class="formulario-texto">
+          <h2>¿Te gustó la comida?</h2>
+          <h3>¡Esperamos tus comentarios!</h3>
+        </div>
+
+        <div class="datos-formulario">
+          <form id="formulario-completar">
+            <label for="nombre">Nombre y apellido</label>
+            <input type="text" id="nombre" name="nombre">
+
+            <label for="email">Mi plato fue</label>
+            <input type="text" id="email" name="email">
+
+            <label for="mensaje">Comentario</label>
+            <textarea id="mensaje" name="mensaje" rows="5"></textarea>
+
+            <button type="submit" id="boton-enviar">Enviar comentario</button>
+          </form>
+        </div>
+    </section>
+  </main>
+
+  <script>
+    const boton = document.getElementById('boton-enviar');
+    const formulario = document.getElementById('formulario-completar');
+
+    formulario.addEventListener('submit', function (e) {
+      e.preventDefault();
+      boton.textContent = '¡Enviado!';
+      boton.classList.add('enviado');
+      boton.disabled = true;
+      setTimeout(() => {
+        boton.textContent = 'Enviar otro mensaje';
+        boton.classList.remove('enviado');
+        boton.disabled = false;
+      }, 2000);
+    });
+  </script>
+
+        <footer class="footerAP">
+            <div class="footer-contenido">
+                <div class="footer-info">
+                    <img src="img/home/footer/logo-footer.svg" alt="Logo Abuela Pan" class="footer-logo">
+                    <div class="footer-texto">
+                        <p>Chile 518 - San Telmo / Buenos Aires / Argentina</p>
+                        <p>Delivery sin cargo: 4361-4936 / 4300-1519</p>
+                    </div>
+                </div>
+                <div class="footer-redes">
+                    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" aria-label="WhatsApp">
+                        <img src="img/home/footer/social-wpp.svg" alt="WhatsApp" class="iconos-redes">
+                    </a>
+                    <a href="https://instagram.com/abuelapanresto" target="_blank" aria-label="Instagram">
+                        <img src="img/home/footer/social-ig.svg" alt="Instagram" class="iconos-redes">
+                    </a>
+                    <a href="https://www.facebook.com/Abuelapanrestovegui" target="_blank" aria-label="Facebook">
+                        <img src="img/home/footer/social-fb.svg" alt="Facebook" class="iconos-redes">
+                    </a>
+                </div>
+            </div>
+        </footer>
+
+
+</body>
+
+</html>
