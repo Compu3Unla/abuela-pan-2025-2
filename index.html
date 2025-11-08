@@ -62,30 +62,6 @@
 </section>
 
 
-<!--SCRIPT PARA EL SLIDER-->
-<script>
-  const track = document.querySelector('.slider-imgs');
-  const slides = document.querySelectorAll('.slider-imgs img');
-  let index = 0;
-
-  track.style.width = `${slides.length * 100}vw`;
-
-  function updateSlide(transition = true) {
-    track.style.transition = transition ? 'transform 0.5s ease' : 'none';
-    track.style.transform = `translateX(-${index * 100}vw)`;
-  }
-
-  function nextSlide() {
-    index = (index + 1) % slides.length;
-    updateSlide();
-  }
-
-  setInterval(nextSlide, 2000);
-  updateSlide();
-</script>
-<!----------------------->
-
-
 <section class="platos-recetas-reseñasAP">
   <a href="menu.html" class="iconos-hover">
     <img src="img/home/icon-platos-static.svg" alt="Platos" class="icono-static">
