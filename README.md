@@ -1,16 +1,40 @@
-Mi aporte en el grupo fue mas que nada primordial en la parte de la construcción del css, mejorando aspectos detallados del mismo codigo. 
-Por otro lado generar el archivo multimedia en la parte de historia y lograr embeberlo con exito para la correcta visualizacion.
-Por ultimo en el home, modifique el tamaño de las imagenes (max-width) afectando directamente a la correcta disposicion de los elementos en la pantalla.
+# TP4 | Abuela Pan
 
-Resolución:
-/* === 1680x1050 === */ franco
-/* === 1920x1080 === */ fernando
-/* === 1920x1080 === */ uriel
+Al elegir temática nos tocó el comodín, elegimos gastronomía y el sitio de Abuela Pan, un restaurant vegetariano. Rediseñamos el logo, y toda la web para que sea más intuitiva y fácil de usar.
 
-Link figma:
-https://www.figma.com/design/urJeC8Xsw3WtZSe44ZDhRA/G3---Abuela-Pan?node-id=1-5&t=lAO9PYOfdzWtKYd1-1
+- [Sitio Actual de Abuela Pan](https://www.abuelapan.com/)
 
-Capturas de pantalla: 
-Uriel: <img width="1919" height="1079" alt="uriel-screen" src="https://github.com/user-attachments/assets/fd44b2e2-050a-449b-8321-c8759468fa8f" />
-Franco: ![home-screen-franco](https://github.com/user-attachments/assets/4b1ea18a-89bd-4d38-a125-14ce9ab77e42)
-Fernando: <img width="1897" height="1095" alt="fer-screen" src="https://github.com/user-attachments/assets/c00f9eb8-ee2e-4a64-8d5f-6d7d148db479" />
+También realizamos mobile funcional a partir de los 500 px en las página de Home y Reseñas.
+
+Integrantes: Barrera, Fernando / Lopéz, Uriel / Gilona, Franco.
+
+## El sitio que realizamos cuenta con las siguientes pages:
+
+- **Index/Home**: Página principal de la web
+- **Historia/Nosotros**: Información del restaurante, galería de imágenes y video.
+- **Contacto**: Iframe del mapa del lugar, imagenes que acompañan y datos del lugar.
+- **Reseñas**: Página con un formulario para reseñar platos.
+- **Menú/Platos**: Comidas que ofrece el lugar.
+- **Empty state**: Página de error en sistema con el resto.
+
+
+## Tamaño de pantallas en las que trabajamos
+
+- Fernando: 1920x1080
+- Uriel: 1920x1080
+- Franco: 1680x1050
+
+## Editor de código utilizado
+
+- Visual Studio Code
+
+## Maqueta en figma
+
+- [Link de figma](https://www.figma.com/design/urJeC8Xsw3WtZSe44ZDhRA/G3---Abuela-Pan?node-id=1-7&p=f&t=Gul1gRKzSaa5Vh5s-0)
+
+---
+
+**Grupo 3 / 2C2025**  
+Diseño y Comunicación Visual  
+Universidad Nacional de Lanús
+Computación 3 - Cátedra Wischñevsky
