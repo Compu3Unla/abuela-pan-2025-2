@@ -433,7 +433,7 @@ body {
 .iconos-hover p {
   color: var(--verdeAP);
   text-align: center;
-  font-family: "Ltt Recoleta";
+  font-family: "LttRecoleta";
   font-size: 25px;
   font-style: normal;
   font-weight: 500;
@@ -522,7 +522,7 @@ body {
 .historia-contenido h1 {
   color: var(--verdeAP);
   text-align: center;
-  font-family: "Ltt Recoleta";
+  font-family: "LttRecoleta";
   font-size: 69px;
   font-style: normal;
   font-weight: 600;
@@ -532,7 +532,7 @@ body {
 .historia-contenido h2 {
   color: var(--verdeoscuroAP);
   text-align: center;
-  font-family: "Ltt Recoleta";
+  font-family: "LttRecoleta";
   font-size: 40px;
   font-style: normal;
   font-weight: 500;
@@ -541,7 +541,7 @@ body {
 
 .historia-texto {
   color: var(--verdeoscuroAP);
-  font-family: "Bambino New";
+  font-family: "BambinoNew";
   width: 541px;
   font-size: 20px;
   font-style: normal;
@@ -572,7 +572,7 @@ body {
 .empty-contenido h1 {
   color: var(--verdeAP);
   text-align: center;
-  font-family: "Ltt Recoleta";
+  font-family: "LttRecoleta";
   font-size: 69px;
   font-style: normal;
   font-weight: 600;
@@ -582,7 +582,7 @@ body {
 .empty-contenido h2 {
   color: var(--verdeoscuroAP);
   text-align: center;
-  font-family: "Ltt Recoleta";
+  font-family: "LttRecoleta";
   font-size: 40px;
   font-style: normal;
   font-weight: 500;
@@ -666,7 +666,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  font-family: "Bambino New", serif;
+  font-family: "BambinoNew", serif;
 }
 
 .datos-formulario label {
@@ -721,7 +721,7 @@ body {
 .menu-lista h1 {
   color: var(--verdeAP);
   text-align: center;
-  font-family: "Ltt Recoleta";
+  font-family: "LttRecoleta";
   font-size: 64px;
   font-style: normal;
   font-weight: 900;
@@ -763,7 +763,7 @@ body {
 }
 
 .plato h3 {
-  font-family: "Ltt Recoleta";
+  font-family: "LttRecoleta";
   font-size: 32px;
   font-weight: 600;
   line-height: normal;
@@ -780,7 +780,7 @@ body {
 
 .plato h4 {
   color: inherit;
-  font-family: "Ltt Recoleta";
+  font-family: "LttRecoleta";
   font-size: 22px;
   font-weight: 900;
   line-height: normal;
