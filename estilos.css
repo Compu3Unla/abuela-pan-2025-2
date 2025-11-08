@@ -161,13 +161,16 @@ html {
   scroll-behavior: smooth;
 }
 
-body {
+body,
+html{
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   background-color: var(--cremaAP);
-}
+} 
+
+
 
 .homeAP {
   overflow-x: hidden;
@@ -363,21 +366,43 @@ body {
 
 /* SLIDER, HABRÍA QUE REVISAR SI ESTA TODO OK */
 .sliderAP {
-  width: 100vw;
-  margin: 0;
-  padding: 0;
-}
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  background-color: var(--cremaAP);
+} 
 
 .slider-imgs {
+  width: 300%;
+  height: 100%;
   display: flex;
-  transition: transform 0.5s ease;
-}
+  animation: slide 9s infinite ease-in-out;
+} 
 
 .slider-imgs img {
-  width: 100vw;
-  flex-shrink: 0;
+  width: 33.333%;
+  height: 100%;
   object-fit: cover;
-}
+  object-position: center;
+} 
+
+@keyframes slide {
+  0%, 30% {
+    transform: translateX(0%);
+  }
+
+  33.33%, 63.33% {
+    transform: translateX(-33.333%);
+  }
+
+  66.66%, 96.66% {
+    transform: translateX(-66.666%);
+  }
+
+  100% {
+    transform: translateX(0%);
+  }
+} 
 
 /* BOTONES DE PLATOS-RECETAS-RESEÑAS Y SU CORRESPONDIENTE HOVER */
 .platos-recetas-reseñasAP {
@@ -936,7 +961,7 @@ color: var(--cremaAP);
 
 
 /* === arroba midia :P === */
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   /* HEADER / NAV */
   .headerAP {
     padding: 10px 12px;
@@ -951,19 +976,15 @@ color: var(--cremaAP);
   }
 
   /* SLIDER: altura controlada para mobile */
-  .slider-imgs img {
-    width: 100vw;
+
+  .sliderAP {
     height: 220px;
-    object-fit: cover;
-  }
-  .sliderAP,
-  .slider-imgs {
     overflow: hidden;
   }
 
   /* ICONOS (Platos / Recetas / Reseñas) */
 .platos-recetas-reseñasAP {
-  display: column;
+  display: flex;
   justify-content: center;
   gap: 20px;       
   flex-wrap: nowrap; 
@@ -972,12 +993,15 @@ color: var(--cremaAP);
 
 .icono-static { z-index: 1; display: block; }
 .icono-hover {
-  position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -70%);
   z-index: 2;
   opacity: 0;
+}
+
+.iconos-hover {
+  position: relative; 
 }
 
 .iconos-hover:hover .icono-hover { opacity: 1; }
@@ -1045,7 +1069,7 @@ color: var(--cremaAP);
   }
 
   /* Ajustes tipográficos generales */
-  body {
+  body{
     font-size: 16px;
   }
 
