@@ -12,154 +12,157 @@
 <body class="homeAP">
 
 
-<header class="headerAP">
-  <nav class="nav-header">
-    <a href="historia.html" class="nav-boton">Nosotros</a>
+  <header class="headerAP">
+    <nav class="nav-header">
+      <a href="historia.html" class="nav-boton">Nosotros</a>
 
-    <a href="index.html" class="boton-home">
-      <img src="img/home/logohome.svg" alt="Logo de Abuela Pan" class="logo-header">
+      <a href="index.html" class="boton-home">
+        <img src="img/home/logohome.svg" alt="Logo de Abuela Pan" class="logo-header">
+      </a>
+
+      <a href="contacto.html" class="nav-boton">Contacto</a>
+    </nav>
+  </header>
+
+
+  <!--MOBILE-->
+  <header class="header-mobile">
+    <div class="header-mobile-contenido">
+      <img src="img/mobile/retrato-header.svg" alt="Retrato Abuela Pan" class="logo-mobile">
+      <h1 class="titulo-mobile">Abuela Pan</h1>
+      <button class="menu-hamburguesa" aria-label="Abrir menú">
+        <img src="img/mobile/hamburguesa.svg" alt="Menú">
+      </button>
+    </div>
+    <nav class="menu-mobile" id="menuMobile">
+      <ul>
+        <li><a href="historia.html">Nosotros</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+  <!--SCRIPT PARA EL MENU MOBILE-->
+  <script>
+    const botonMenu = document.querySelector('.menu-hamburguesa');
+    const menu = document.getElementById('menuMobile');
+
+    botonMenu.addEventListener('click', () => {
+      menu.classList.toggle('activo');
+    });
+  </script>
+  <!----------------------->
+
+
+  <section class="sliderAP">
+    <div class="slider-imgs">
+      <img src="img/home/plato01.jpg" alt="Plato 1">
+      <img src="img/home/plato02.jpg" alt="Plato 2">
+      <img src="img/home/plato03.jpg" alt="Plato 3">
+    </div>
+  </section>
+
+
+  <section class="platos-recetas-reseñasAP">
+    <a href="menu.html" class="iconos-hover">
+      <img src="img/home/icon-platos-static.svg" alt="Platos" class="icono-static">
+      <img src="img/home/icon-platos-hover.svg" alt="Platos Hover" class="icono-hover">
+      <p>Platos</p>
     </a>
-
-    <a href="contacto.html" class="nav-boton">Contacto</a>
-  </nav>
-</header>
-
-
-<!--MOBILE-->
-<header class="header-mobile">
-  <div class="header-mobile-contenido">
-    <img src="img/mobile/retrato-header.svg" alt="Retrato Abuela Pan" class="logo-mobile">
-    <h1 class="titulo-mobile">Abuela Pan</h1>
-    <button class="menu-hamburguesa" aria-label="Abrir menú">
-      <img src="img/mobile/hamburguesa.svg" alt="Menú">
-    </button>
-  </div>
-  <nav class="menu-mobile" id="menuMobile">
-  <ul>
-    <li><a href="historia.html">Nosotros</a></li>
-    <li><a href="contacto.html">Contacto</a></li>
-  </ul>
-</nav>
-</header>
-<!--SCRIPT PARA EL MENU MOBILE-->
-<script>
-  const botonMenu = document.querySelector('.menu-hamburguesa');
-  const menu = document.getElementById('menuMobile');
-
-  botonMenu.addEventListener('click', () => {
-    menu.classList.toggle('activo');
-  });
-</script>
-<!----------------------->
+    <a href="#recetasAP" class="iconos-hover">
+      <img src="img/home/icon-recetas-static.svg" alt="Recetas" class="icono-static">
+      <img src="img/home/icon-recetas-hover.svg" alt="Recetas Hover" class="icono-hover">
+      <p>Recetas</p>
+    </a>
+    <a href="reseñas.html" class="iconos-hover">
+      <img src="img/home/icon-reviews-static.svg" alt="Reseñas" class="icono-static">
+      <img src="img/home/icon-review-hover.svg" alt="Reseñas Hover" class="icono-hover">
+      <p>Reseñas</p>
+    </a>
+  </section>
 
 
-<section class="sliderAP">
-  <div class="slider-imgs">
-    <img src="img/home/plato01.jpg" alt="Plato 1">
-    <img src="img/home/plato02.jpg" alt="Plato 2">
-    <img src="img/home/plato03.jpg" alt="Plato 3">
-  </div>
-</section>
+  <section class="recetasAP">
+    <article class="preview-receta">
+      <img src="img/home/plato1-recetas.jpg" alt="Croquetas de arroz y verduras">
+      <h3>Croquetas de arroz y verduras</h3>
+      <p>Crujientes por fuera y melosas por dentro, ¡vas a alucinar con estas croquetas de arroz y verduras veganas!.
+        Fáciles, ¡y listas en 20 minutos!. Esta es una receta para cuando te ha sobrado arroz cocido. Es muy práctica ya
+        que puedes aprovechar lo que tienes en la heladera.</p>
+      <a href="empty-state.html" class="boton-recetaAP">Ver receta</a>
+    </article>
 
+    <article class="preview-receta">
+      <img src="img/home/plato2-recetas.jpg" alt="Potaje lento de Alubias blancas">
+      <h3>Potaje lento de Alubias blancas</h3>
+      <p>Su textura es cremosa, su sabor reconfortante y además es un plato saludable, rico en proteína vegetal y muy
+        saciante. De esta receta salen 3 raciones generosas. De esta manera pueden guardar en la heladera y comer en los
+        próximos días o directamente congelar para consumirlo a largo plazo. A disfrutar!</p>
+      <a href="empty-state.html" class="boton-recetaAP">Ver receta</a>
+    </article>
 
-<section class="platos-recetas-reseñasAP">
-  <a href="menu.html" class="iconos-hover">
-    <img src="img/home/icon-platos-static.svg" alt="Platos" class="icono-static">
-    <img src="img/home/icon-platos-hover.svg" alt="Platos Hover" class="icono-hover">
-    <p>Platos</p>
-  </a>
-  <a href="#recetasAP" class="iconos-hover">
-    <img src="img/home/icon-recetas-static.svg" alt="Recetas" class="icono-static">
-    <img src="img/home/icon-recetas-hover.svg" alt="Recetas Hover" class="icono-hover">
-    <p>Recetas</p>
-  </a>
-  <a href="reseñas.html" class="iconos-hover">
-    <img src="img/home/icon-reviews-static.svg" alt="Reseñas" class="icono-static">
-    <img src="img/home/icon-review-hover.svg" alt="Reseñas Hover" class="icono-hover">
-    <p>Reseñas</p>
-  </a>
-</section>
+    <article class="preview-receta">
+      <img src="img/home/plato3-recetas.jpg" alt="Canelones de verdura con Salsa blanca o roja">
+      <h3>Canelones de verdura con Salsa blanca o roja</h3>
+      <p>Delicadas láminas de masa casera envuelven un suave relleno de espinaca fresca y ricota cremosa, cubiertas con
+        una fina capa de salsa blanca o tomate natural al estilo del bodegón porteño. Un clásico que une la calidez de
+        la cocina de las abuelas con la frescura y el sabor de la mesa contemporánea.</p>
+      <a href="empty-state.html" class="boton-recetaAP">Ver receta</a>
+    </article>
+  </section>
 
-
-<section class="recetasAP">
-  <article class="preview-receta">
-    <img src="img/home/plato1-recetas.jpg" alt="Croquetas de arroz y verduras">
-    <h3>Croquetas de arroz y verduras</h3>
-    <p>Crujientes por fuera y melosas por dentro, ¡vas a alucinar con estas croquetas de arroz y verduras veganas!. Fáciles, ¡y listas en 20 minutos!. Esta es una receta para cuando te ha sobrado arroz cocido. Es muy práctica ya que puedes aprovechar lo que tienes en la heladera.</p>
-    <a href="empty-state.html" class="boton-recetaAP">Ver receta</a>
-  </article>
-
-  <article class="preview-receta">
-    <img src="img/home/plato2-recetas.jpg" alt="Potaje lento de Alubias blancas">
-    <h3>Potaje lento de Alubias blancas</h3>
-    <p>Su textura es cremosa, su sabor reconfortante y además es un plato saludable, rico en proteína vegetal y muy saciante. De esta receta salen 3 raciones generosas. De esta manera pueden guardar en la heladera y comer en los próximos días o directamente congelar para consumirlo a largo plazo. A disfrutar!</p>
-    <a href="empty-state.html" class="boton-recetaAP">Ver receta</a>
-  </article>
-
-  <article class="preview-receta">
-    <img src="img/home/plato3-recetas.jpg" alt="Canelones de verdura con Salsa blanca o roja">
-    <h3>Canelones de verdura con Salsa blanca o roja</h3>
-    <p>Delicadas láminas de masa casera envuelven un suave relleno de espinaca fresca y ricota cremosa, cubiertas con una fina capa de salsa blanca o tomate natural al estilo del bodegón porteño. Un clásico que une la calidez de la cocina de las abuelas con la frescura y el sabor de la mesa contemporánea.</p>
-    <a href="empty-state.html" class="boton-recetaAP">Ver receta</a>
-  </article>
-</section>
-
-
-
-
-<footer class="footerAP">
-  <div class="footer-contenido">
-    <div class="footer-info">
-      <img src="img/home/footer/logo-footer.svg" alt="Logo Abuela Pan" class="footer-logo">
-      <div class="footer-texto">
-        <p>Chile 518 - San Telmo / Buenos Aires / Argentina</p>
-        <p>Delivery sin cargo: 4361-4936 / 4300-1519</p>
+  <footer class="footerAP">
+    <div class="footer-contenido">
+      <div class="footer-info">
+        <img src="img/home/footer/logo-footer.svg" alt="Logo Abuela Pan" class="footer-logo">
+        <div class="footer-texto">
+          <p>Chile 518 - San Telmo / Buenos Aires / Argentina</p>
+          <p>Delivery sin cargo: 4361-4936 / 4300-1519</p>
+        </div>
+      </div>
+      <div class="footer-redes">
+        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" aria-label="WhatsApp">
+          <img src="img/home/footer/social-wpp.svg" alt="WhatsApp" class="iconos-redes">
+        </a>
+        <a href="https://instagram.com/abuelapanresto" target="_blank" aria-label="Instagram">
+          <img src="img/home/footer/social-ig.svg" alt="Instagram" class="iconos-redes">
+        </a>
+        <a href="https://www.facebook.com/Abuelapanrestovegui" target="_blank" aria-label="Facebook">
+          <img src="img/home/footer/social-fb.svg" alt="Facebook" class="iconos-redes">
+        </a>
       </div>
     </div>
-    <div class="footer-redes">
-      <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" aria-label="WhatsApp">
-        <img src="img/home/footer/social-wpp.svg" alt="WhatsApp" class="iconos-redes">
-      </a>
-      <a href="https://instagram.com/abuelapanresto" target="_blank" aria-label="Instagram">
-        <img src="img/home/footer/social-ig.svg" alt="Instagram" class="iconos-redes">
-      </a>
-      <a href="https://www.facebook.com/Abuelapanrestovegui" target="_blank" aria-label="Facebook">
-        <img src="img/home/footer/social-fb.svg" alt="Facebook" class="iconos-redes">
-      </a>
+  </footer>
+
+
+  <!--MOBILE-->
+  <footer class="footer-mobile">
+    <div class="footer-mobile-contenido">
+
+      <img src="img/mobile/retrato.svg" alt="Retrato de Abuela Pan" class="footer-mobile-logo">
+      <h1 class="footer-mobile-titulo">Abuela Pan</h1>
+
+      <section class="footer-mobile-contacto">
+        <h2>Contacto</h2>
+        <p>4362-4936 / 4300-1519</p>
+        <p>ap@abuelapan.com</p>
+        <p>Chile 518 / Buenos Aires, Argentina</p>
+      </section>
+
+      <nav class="footer-mobile-redes" aria-label="Redes sociales">
+        <a href="https://instagram.com/abuelapanresto" target="_blank" aria-label="Instagram">
+          <img src="img/mobile/ig.svg" alt="Instagram">
+        </a>
+        <a href="https://facebook.com/Abuelapanrestovegui" target="_blank" aria-label="Facebook">
+          <img src="img/mobile/facebook.svg" alt="Facebook">
+        </a>
+        <a href="https://wa.me/5491133624936" target="_blank" aria-label="WhatsApp">
+          <img src="img/mobile/wpp.svg" alt="WhatsApp">
+        </a>
+      </nav>
+
     </div>
-  </div>
-</footer>
-
-
-<!--MOBILE-->
-<footer class="footer-mobile">
-  <div class="footer-mobile-contenido">
-
-    <img src="img/mobile/retrato.svg" alt="Retrato de Abuela Pan" class="footer-mobile-logo">
-    <h1 class="footer-mobile-titulo">Abuela Pan</h1>
-
-    <section class="footer-mobile-contacto">
-      <h2>Contacto</h2>
-      <p>4362-4936 / 4300-1519</p>
-      <p>ap@abuelapan.com</p>
-      <p>Chile 518 / Buenos Aires, Argentina</p>
-    </section>
-
-    <nav class="footer-mobile-redes" aria-label="Redes sociales">
-      <a href="https://instagram.com/abuelapanresto" target="_blank" aria-label="Instagram">
-        <img src="img/mobile/ig.svg" alt="Instagram">
-      </a>
-      <a href="https://facebook.com/Abuelapanrestovegui" target="_blank" aria-label="Facebook">
-        <img src="img/mobile/facebook.svg" alt="Facebook">
-      </a>
-      <a href="https://wa.me/5491133624936" target="_blank" aria-label="WhatsApp">
-        <img src="img/mobile/wpp.svg" alt="WhatsApp">
-      </a>
-    </nav>
-
-  </div>
-</footer>
-<!----------------------->
+  </footer>
+  <!----------------------->
 
 </body>
 

@@ -162,13 +162,13 @@ html {
 }
 
 body,
-html{
+html {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   background-color: var(--cremaAP);
-} 
+}
 
 
 
@@ -370,39 +370,43 @@ html{
   overflow: hidden;
   position: relative;
   background-color: var(--cremaAP);
-} 
+}
 
 .slider-imgs {
   width: 300%;
   height: 100%;
   display: flex;
   animation: slide 9s infinite ease-in-out;
-} 
+}
 
 .slider-imgs img {
   width: 33.333%;
   height: 100%;
   object-fit: cover;
   object-position: center;
-} 
+}
 
 @keyframes slide {
-  0%, 30% {
+
+  0%,
+  30% {
     transform: translateX(0%);
   }
 
-  33.33%, 63.33% {
+  33.33%,
+  63.33% {
     transform: translateX(-33.333%);
   }
 
-  66.66%, 96.66% {
+  66.66%,
+  96.66% {
     transform: translateX(-66.666%);
   }
 
   100% {
     transform: translateX(0%);
   }
-} 
+}
 
 /* BOTONES DE PLATOS-RECETAS-RESEÑAS Y SU CORRESPONDIENTE HOVER */
 .platos-recetas-reseñasAP {
@@ -537,18 +541,18 @@ html{
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  gap: 40px;
+  gap: 64px;
   margin: 30px auto 30px;
-  padding: 40px 16px;
+  padding: 30px 95px;
   border: 4px solid var(--verdeAP);
   border-radius: 40px;
 }
 
 .historia-contenido h1 {
   color: var(--verdeAP);
-  text-align: center;
+  text-align: left;
   font-family: "LttRecoleta";
-  font-size: 69px;
+  font-size: 64px;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
@@ -556,7 +560,7 @@ html{
 
 .historia-contenido h2 {
   color: var(--verdeoscuroAP);
-  text-align: center;
+  text-align: left;
   font-family: "LttRecoleta";
   font-size: 40px;
   font-style: normal;
@@ -565,14 +569,21 @@ html{
 }
 
 .historia-texto {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.historia-texto p {
   color: var(--verdeoscuroAP);
   font-family: "BambinoNew";
-  width: 541px;
-  font-size: 20px;
+  width: 400px;
+  font-size: 16px;
   font-style: normal;
-  text-align: center;
+  text-align: left;
   font-weight: 400;
-  line-height: 36px;
+  line-height: 32px;
 }
 
 /* === VIDEO === */
@@ -941,18 +952,19 @@ html{
   padding: 16px;
   font-family: 'bambinonew', serif;
 }
+
 .menu-mobile a {
-color: var(--cremaAP); 
+  color: var(--cremaAP);
   text-decoration: none;
   font-family: 'lttrecoleta', serif;
   font-size: 18px;
-  }
+}
 
 
 .menu-mobile ul {
   list-style: none;
   line-height: 2;
-  }
+}
 
 .menu-mobile.activo {
   display: flex;
@@ -962,15 +974,18 @@ color: var(--cremaAP);
 
 /* === arroba midia :P === */
 @media (max-width: 600px) {
+
   /* HEADER / NAV */
   .headerAP {
     padding: 10px 12px;
   }
+
   .nav-header {
     gap: 8px;
     max-width: none;
     padding: 0 6px;
   }
+
   .logo-header {
     height: 40px;
   }
@@ -983,34 +998,43 @@ color: var(--cremaAP);
   }
 
   /* ICONOS (Platos / Recetas / Reseñas) */
-.platos-recetas-reseñasAP {
-  display: flex;
-  justify-content: center;
-  gap: 20px;       
-  flex-wrap: nowrap; 
-  align-items: center;
-}
+  .platos-recetas-reseñasAP {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: nowrap;
+    align-items: center;
+  }
 
-.icono-static { z-index: 1; display: block; }
-.icono-hover {
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -70%);
-  z-index: 2;
-  opacity: 0;
-}
+  .icono-static {
+    z-index: 1;
+    display: block;
+  }
 
-.iconos-hover {
-  position: relative; 
-}
+  .icono-hover {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -70%);
+    z-index: 2;
+    opacity: 0;
+  }
 
-.iconos-hover:hover .icono-hover { opacity: 1; }
-.iconos-hover:hover .icono-static { opacity: 0; }
+  .iconos-hover {
+    position: relative;
+  }
 
-.iconos-hover p {
-  font-size: 16px;  
-  margin-top: 4px;
-}
+  .iconos-hover:hover .icono-hover {
+    opacity: 1;
+  }
+
+  .iconos-hover:hover .icono-static {
+    opacity: 0;
+  }
+
+  .iconos-hover p {
+    font-size: 16px;
+    margin-top: 4px;
+  }
 
   /* RECETAS: fuerza ancho completo y previews apilados */
   .recetasAP {
@@ -1019,6 +1043,7 @@ color: var(--cremaAP);
     margin: 0 auto;
     box-sizing: border-box;
   }
+
   .preview-receta {
     width: 100%;
     display: block;
@@ -1026,15 +1051,18 @@ color: var(--cremaAP);
     margin-bottom: 16px;
     box-sizing: border-box;
   }
+
   .preview-receta img {
     width: 100%;
     height: auto;
     border-radius: 10px;
   }
+
   .preview-receta h3 {
     font-size: 18px;
     margin: 10px 0 6px;
   }
+
   .preview-receta p {
     font-size: 14px;
     line-height: 1.4;
@@ -1052,6 +1080,7 @@ color: var(--cremaAP);
     max-width: 100%;
     padding-bottom: 56.25%;
   }
+
   .videoAP {
     padding: 16px 12px;
   }
@@ -1064,12 +1093,13 @@ color: var(--cremaAP);
     align-items: center;
     text-align: center;
   }
+
   .footer-texto p {
     font-size: 13px;
   }
 
   /* Ajustes tipográficos generales */
-  body{
+  body {
     font-size: 16px;
   }
 
@@ -1090,4 +1120,4 @@ color: var(--cremaAP);
   .headerAP {
     display: none;
   }
-} 
+}
